@@ -1,0 +1,366 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --bgcolor: #1C2230;
+    --cordobotao: #43B1CD;
+    --cordascaixas: #21293B;
+}
+body {
+    background-color: var(--bgcolor);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*Menu*/
+header {
+    padding: 45px;
+    display: flex;
+}
+nav {
+    padding-top: 10px;
+    margin-left: auto;
+}
+nav a {
+    padding: 20px;
+    text-decoration: none;
+    color: #ffffff8f;
+}
+
+/*Imagem de intro*/
+article.um {
+    margin: auto;
+    width: 450px;
+    text-align: center;
+}
+article.um h1 {
+    font-size: 1.6em;
+}
+button {
+    color: white;
+    cursor: pointer;
+    background-color: var(--cordobotao);
+    border: none;
+    border-radius: 30px;
+    padding: 10px 50px;
+    margin-bottom: 150px;
+}
+
+/*Icones de segurança, celebração e outros*/
+article.dois .pmcoluna {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    gap: 150px;
+}
+article.dois h3 {
+    padding-bottom: 10px;
+}
+article.dois div.img {
+    width: 380px;
+    padding-bottom: 100px;
+}
+article.dois div.img img {
+    padding-bottom: 20px;
+}
+article.dois .segcoluna {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    gap: 150px;
+}
+
+/* seção produtividade */
+article.tres {
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+article.tres .texto {
+    padding-top: 120px;
+}
+article.tres h1 {
+    font-size: 2.2em;
+    padding-bottom: 20px;
+    width: 300px;
+}
+article.tres p {
+    padding-bottom: 20px;
+    width: 500px;
+}
+article.tres a {
+    color: var(--cordobotao);
+    text-decoration: none;
+    border-bottom: 1px solid #43B1CD;
+}
+
+/* seção das 3 caixas */
+.trescaixa {
+    padding-top: 150px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding-bottom: 150px;
+}
+article.trescaixa > div {
+    width: 320px;
+    background-color: var(--cordascaixas);
+    box-shadow: 10px 10px 8px #00000017;
+    padding: 35px 35px 0;
+    border-radius: 5px
+}
+article.trescaixa img {
+    width: 45px;
+    border-radius: 50%;
+}
+.trescaixa aside {
+    padding: 20px 0 20px;
+    display: flex;
+    gap: 10px;
+}
+
+/* caixa de email */
+article.email {
+    border-radius: 5px;
+    width: 900px;
+    height: 180px;
+    padding: 35px 15px;
+    margin: auto;
+    text-align: center;
+    background-color: var(--cordascaixas);
+    box-shadow: 10px 10px 8px #0000003b;
+    margin-bottom: 100px;
+}
+.email h1 {
+    font-size: 2em;
+}
+.email > .espacoemail > input {
+    width: 450px;
+    height: 15px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    padding: 15px;
+}
+.email > .espacoemail {
+    justify-content: center;
+    display: flex;
+    gap: 25px;
+}
+.email > .espacoemail > button {
+    border-radius: 30px;
+    padding: 15px 30px;
+}
+.email p {
+    padding: 20px 0 30px;
+    margin: auto;
+    width: 700px;
+}
+
+/* footer */
+div.picture {
+    margin-bottom: 30px;
+    padding-left: 120px;
+}
+#footer {
+    justify-content: center;
+    margin: 0;
+    display: flex;
+    gap: 100px;
+}
+#footer img {
+    width: 15px;
+    height: 15px;
+    padding-right: 20px;
+}
+#footer > .localizacao {
+    width: 300px;
+    display: flex;
+}
+.contato p {
+    padding-bottom: 10px;
+}
+.blogetc p {
+    padding-bottom: 10px;
+}
+.termos p {
+    padding-bottom: 10px;
+}
+.localizacao img {
+    padding: 6px 20px;
+}
+.socias a {
+    color: white;
+    text-decoration: none;
+}
+.socias a:hover {
+    color: #43B1CD;
+    text-decoration: none;
+}
+.socias ion-icon {
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 30px;
+}
+
+
+footer {
+    margin-top: 100px;
+    padding: 10px;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hwb(228 59% 12%); 
+}
+.attribution a::after {
+    content: ' \1F517';
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    /* seção produtividade */
+    article.tres {
+        width: 100%;
+    }
+    article.tres > img {
+        width: 450px;
+        height: 350px;
+    }
+    article.tres .texto {
+        padding-top: 50px;
+    }
+    /* seção das 3 caixas */
+    .trescaixa {
+        margin: auto;
+        width: 950px;
+    }
+    /* footer */
+    #footer {
+        margin: auto;
+        gap: 60px;
+    }
+    div.picture {
+        padding-left: 50px;
+    }
+}
+
+
+@media screen and (max-width: 375px) {
+    /* menu */
+    header > img {
+        width: 100px;
+        height: 30px;
+    }
+    header {
+        padding: 20px;
+    }
+    nav a {
+        padding: 5px;
+        font-size: 14px;
+    }
+    /*Imagem de intro*/
+    article.um {
+        width: 320px;
+    }
+    article.um > img {
+        margin: 20px 0;
+        width: 280px;
+    }
+    /*Icones de segurança, celebração e outros*/
+    article.dois {
+        display: block;
+        margin: auto;
+        gap: 0;
+    }
+    article.dois div.img {
+        width: 300px; 
+    }
+    article.dois .pmcoluna {
+        display: grid;
+        gap: 0;
+        margin: auto;
+    }
+    article.dois .segcoluna {
+        display: grid;
+        gap: 0;
+        margin: auto;
+    }
+    /* seção produtividade */
+    article.tres {
+        display: block;
+    }
+    article.tres > img {
+        width: 300px;
+        height: 230px;
+        padding-left: 35px;
+    }
+    article.tres .texto {
+        font-size: 14px;
+    }
+    article.tres p, h1 {
+        margin: auto;
+        width: 300px;
+    }
+    /* seção das 3 caixas */
+    .trescaixa {
+        display: block;
+        margin: 0;
+        width: 280px;
+    }
+    article.trescaixa > div {
+        width: 250px;
+        margin: 20px 0 0 20px;
+    }
+    /* caixa de email */
+    article.email {
+        width: 300px;
+        height: 280px;
+        text-align: center;
+    }
+    article.email h1 {
+        font-size: 20px;
+    }
+    .email p {
+        width: 300px;
+        padding: 20px 0 30px;
+    }
+    .email > .espacoemail {
+        display: block;
+        gap: 0;
+    }
+    .email > .espacoemail > input {
+        width: 250px;
+        margin-bottom: 20px;
+    }
+    .email > .espacoemail > button {
+        width: 280px;
+    }
+    /* footer */
+    #footer {
+        display: block;
+        width: 300px;
+    }
+    .localizacao img {
+        padding: 6px 0 0;
+    }
+    #footer .localizacao {
+        margin-bottom: 30px;
+    }
+    .contato {
+        margin-bottom: 20px;
+    }
+    .blogetc {
+        margin-bottom: 20px;
+    }
+    .termos {
+        margin-bottom: 20px;
+    }
+}
