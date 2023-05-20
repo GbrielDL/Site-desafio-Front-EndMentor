@@ -364,3 +364,116 @@ footer {
         margin-bottom: 20px;
     }
 }
+
+
+@media screen and (max-width: 460px) {
+    /* menu */
+    header > img {
+        width: 100px;
+        height: 30px;
+    }
+    header {
+        padding: 20px;
+    }
+    nav a {
+        padding: 5px;
+        font-size: 14px;
+    }
+    /*Imagem de intro*/
+    article.um {
+        width: 320px;
+    }
+    article.um > img {
+        margin: 20px 0;
+        width: 280px;
+    }
+    /*Icones de segurança, celebração e outros*/
+    article.dois {
+        display: block;
+        margin: auto;
+        gap: 0;
+    }
+    article.dois div.img {
+        width: 300px; 
+    }
+    article.dois .pmcoluna {
+        display: grid;
+        gap: 0;
+        margin: auto;
+    }
+    article.dois .segcoluna {
+        display: grid;
+        gap: 0;
+        margin: auto;
+    }
+    /* seção produtividade */
+    article.tres {
+        display: block;
+    }
+    article.tres > img {
+        width: 300px;
+        height: 230px;
+        padding-left: 35px;
+    }
+    article.tres .texto {
+        font-size: 14px;
+    }
+    article.tres p, h1 {
+        margin: auto;
+        width: 300px;
+    }
+    /* seção das 3 caixas */
+    .trescaixa {
+        display: block;
+        margin: 0;
+        width: 280px;
+    }
+    article.trescaixa > div {
+        width: 250px;
+        margin: 20px 0 0 20px;
+    }
+    /* caixa de email */
+    article.email {
+        width: 300px;
+        height: 280px;
+        text-align: center;
+    }
+    article.email h1 {
+        font-size: 20px;
+    }
+    .email p {
+        width: 300px;
+        padding: 20px 0 30px;
+    }
+    .email > .espacoemail {
+        display: block;
+        gap: 0;
+    }
+    .email > .espacoemail > input {
+        width: 250px;
+        margin-bottom: 20px;
+    }
+    .email > .espacoemail > button {
+        width: 280px;
+    }
+    /* footer */
+    #footer {
+        display: block;
+        width: 300px;
+    }
+    .localizacao img {
+        padding: 6px 0 0;
+    }
+    #footer .localizacao {
+        margin-bottom: 30px;
+    }
+    .contato {
+        margin-bottom: 20px;
+    }
+    .blogetc {
+        margin-bottom: 20px;
+    }
+    .termos {
+        margin-bottom: 20px;
+    }
+}
